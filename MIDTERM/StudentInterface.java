@@ -3,9 +3,6 @@ class Student{
 
    private String first_name, middle_name,last_name, suffix;
    
-   
-   
-   
    public String getFirstName(){
       return first_name;
    }
@@ -52,6 +49,7 @@ public class StudentInterface{
       String middle_name = scan.nextLine();
       String last_name = scan.nextLine();
       String suffix = scan.nextLine();
+      scan.close();
       
       stud.setFirstName(first_name);
       stud.setMiddleName(middle_name);
@@ -60,7 +58,7 @@ public class StudentInterface{
       
       stud.Display();
       
-      System.out.println(stud.getFirstName() + stud.getMiddleName()+ stud.getLastName()+ stud.getSuffix());
+      System.out.println(stud.getFirstName() + " "+ stud.getMiddleName()+ " "+  stud.getLastName()+ " " + stud.getSuffix());
      
       
       
